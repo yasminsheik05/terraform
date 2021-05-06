@@ -24,3 +24,20 @@ output "list-2" {
 output "list-3" {
   value = var.list[2]
 }
+
+#variable type -MAP
+
+variable "map" {
+  default = {
+    course-name = "DevOps"
+    trainer = "Raju"
+  }
+}
+output "COURSE_NAME" {
+  value = var.map["course-name"]
+}
+
+
+output "COURSE" {
+  value = "Welcome to ${var.map["course-name"]}Training , Trainer is ${var.map["trainer"]}"
+}
