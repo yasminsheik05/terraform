@@ -24,7 +24,7 @@ output "abc2" {
 
 variable "abc3" { }
 output "abc3" {
-  value = abc4
+  value = abc3
 }
 
 #inputs from SHELL ENV variables
