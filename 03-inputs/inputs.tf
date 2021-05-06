@@ -13,3 +13,9 @@ variable "abc1" { }
 output "abc1" {
   value = var.abc1
 }
+
+#inputs types from a file -terraform.tfvars
+variable "abc2" { }
+output "abc2" {
+  value = var.abc2
+}
