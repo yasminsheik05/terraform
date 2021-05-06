@@ -7,3 +7,9 @@ variable "abc" { }
 output "abc" {
   value = var.abc
 }
+
+#input types as a argument
+variable "abc1" { }
+output "abc1" {
+  value = var.abc1
+}
