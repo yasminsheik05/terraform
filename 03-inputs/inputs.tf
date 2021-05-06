@@ -19,3 +19,18 @@ variable "abc2" { }
 output "abc2" {
   value = var.abc2
 }
+
+#inputs from file sampl.auto.tfvars
+
+variable "abc3" { }
+output "abc3" {
+  value = abc4
+}
+
+#inputs from SHELL ENV variables
+#Export TF_VAR_abc4 = "hello abc4"
+
+variable "abc4" { }
+output "abc4" {
+  value = abc4
+}
