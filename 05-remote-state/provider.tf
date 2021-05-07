@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket     = "yasmin-terraform-state-files"
+    bucket     = "my123-terraform-state-files"
     key        = "sample/terraform.tfstate"
     region     = "us-east-1"
   }
