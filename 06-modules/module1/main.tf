@@ -9,3 +9,7 @@ resource "aws_instance" "sample1" {
 }
 
 variable "INSTANCE_TYPE" { }
+
+output "PUBLIC_IP" {
+  value = aws_instance.sample.public_ip
+}
