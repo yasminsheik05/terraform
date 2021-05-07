@@ -6,6 +6,6 @@ terraform {
   backend "s3" {
     bucket     = "yasmin-terraform-state-files "
     key        = "sample/terraform.tfstate"
-    regoin     = "us-east-1"
+    region     = "us-east-1"
   }
 }
