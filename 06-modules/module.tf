@@ -3,6 +3,11 @@ module "module1" {
   INSTANCE_TYPE = "t2.micro"
 }
 
+module "module2" {
+  source = "./module2"
+  PUBLIC_IP = module.module1.PUBLIC_IP
+}
+
 provider "aws" {
   region = "us-east-1"
 }
